@@ -173,8 +173,6 @@ export default function App() {
                 // Calculus logic mapping geometric layer transforms per offset array indexes
                 const offset = idx - activeCardIndex;
                 const isActive = idx === activeCardIndex;
-                const isPast = offset < 0;
-                const isFuture = offset > 0;
                 
                 // Absolute visual boundary clipping limits
                 if (Math.abs(offset) > 1) return null;
